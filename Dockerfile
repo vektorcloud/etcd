@@ -1,4 +1,4 @@
-FROM quay.io/vektorcloud/base:latest
+FROM quay.io/vektorcloud/base:3.4
 
 ENV ETCD_VERSION v2.2.4
 
