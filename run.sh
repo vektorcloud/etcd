@@ -1,9 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 function output() {
   echo -ne '[\033[34metcd-wrapper\033[m] '
   echo $@
 }
+
 # Check for $CLIENT_URLS
 if [ -zG ${CLIENT_URLS+x} ]; then
   CLIENT_URLS="http://0.0.0.0:4001,http://0.0.0.0:2379"

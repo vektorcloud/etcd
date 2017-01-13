@@ -2,7 +2,7 @@ FROM quay.io/vektorcloud/base:3.4
 
 ENV ETCD_VERSION v2.2.4
 
-RUN apk add --no-cache ca-certificates openssl && \
+RUN apk add --no-cache ca-certificates openssl bash && \
     wget https://github.com/coreos/etcd/releases/download/${ETCD_VERSION}/etcd-${ETCD_VERSION}-linux-amd64.tar.gz && \
     tar xzvf etcd-${ETCD_VERSION}-linux-amd64.tar.gz && \
     mv etcd-${ETCD_VERSION}-linux-amd64/etcd* /bin/ && \
