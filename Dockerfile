@@ -8,8 +8,6 @@ RUN apk add --no-cache ca-certificates openssl bash && \
     mv etcd-${ETCD_VER}-linux-amd64/etcd* /bin/ && \
     rm -Rf etcd-${ETCD_VER}-linux-amd64*
 
-COPY run.sh /run.sh
-
 VOLUME      /data
-EXPOSE      2379 2380 4001 7001
-ENTRYPOINT  ["/run.sh"]
+EXPOSE      2379 2380
+ENTRYPOINT  ["/bin/etcd"]
