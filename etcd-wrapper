@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export ETCD_INITIAL_ADVERTISE_PEER_URLS="http://${ETCD_NAME}:2380"
+export ETCD_ADVERTISE_CLIENT_URLS="http://${ETCD_NAME}:2379"
+
+/bin/etcd $@
