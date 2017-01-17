@@ -1,5 +1,8 @@
 #!/bin/sh
 
+export ETCD_NAME="${HOSTNAME}"
+export ETCD_LISTEN_PEER_URLS="http://0.0.0.0:2380"
+export ETCD_LISTEN_CLIENT_URLS="http://0.0.0.0:2379"
 export ETCD_INITIAL_ADVERTISE_PEER_URLS="http://${ETCD_NAME}:2380"
 export ETCD_ADVERTISE_CLIENT_URLS="http://${ETCD_NAME}:2379"
 

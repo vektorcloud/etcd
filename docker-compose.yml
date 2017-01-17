@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  etcd:
+    image: quay.io/vektorcloud/etcd:latest
+    entrypoint: /etcd-wrapper
+    environment:
+      ETCD_DISCOVERY: ${ETCD_DISCOVERY}
+    networks:
+      - etcd-cluster
+
+networks:
+  etcd-cluster:
+    driver: bridge
