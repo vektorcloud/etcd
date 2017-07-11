@@ -1,6 +1,6 @@
-FROM quay.io/vektorcloud/base:3.4
+FROM quay.io/vektorcloud/base:3.6
 
-ENV ETCD_VER v3.0.16
+ENV ETCD_VER v3.2.2
 ENV ETCD_DATA_DIR /data
 
 RUN apk add --no-cache ca-certificates openssl && \
