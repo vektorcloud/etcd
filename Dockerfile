@@ -1,4 +1,4 @@
-FROM quay.io/vektorcloud/base:3.6
+FROM quay.io/vektorcloud/base:3.7
 
 ENV ETCD_VER v3.0.16
 ENV ETCD_DATA_DIR /data
