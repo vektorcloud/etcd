@@ -13,4 +13,4 @@ export ETCD_DISCOVERY=$(curl -s discovery.etcd.io/new)
 docker-compose up -d && docker-compose scale etcd=3
 ```
 
-[circleci]: https://img.shields.io/circleci/project/github/vektorcloud/etcd.svg "etcd"
+[circleci]: https://img.shields.io/circleci/build/gh/vektorcloud/etcd?color=1dd6c9&logo=CircleCI&logoColor=1dd6c9&style=for-the-badge "etcd"
