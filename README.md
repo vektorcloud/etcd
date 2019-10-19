@@ -1,6 +1,6 @@
 # etcd
 
-![circleci][circleci]
+[![circleci][circleci]](https://circleci.com/gh/vektorcloud/etcd)
 
 Alpine-based etcd image
 
